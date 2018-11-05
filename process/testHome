@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ra portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
+    
+    <style>
+    body {
+        font: 18px 'abel', sans-serif;
+        line-height: 1.8;
+        color: #777;
+        margin: 5%;
+    }
+    p{
+        font-size: 20px;
+    }   
+    ul{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 5px;
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+        background-color: #fff;
+        margin: 25%, 5%;
+    }
+    .ul .icon {
+        display: none;
+    }
+    li {
+        float: right;
+        margin-right: 20px;
+    }    
+    
+    li a {
+        color: #777;
+        font-size: 18px;
+        display: inline-block;
+        padding: 10px;
+        font-family: "abel";
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    li a img {
+        padding: 0px;        
+    }
+    
+    li a:hover{
+        background-color: #FBB03B;     
+        color: #fff;
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    
+    #Graphic {
+        background-image: url('image/graphicDesignBtn.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 157px;
+        width: 60px;
+    }
+    #Graphic:hover {
+        background-image: url('image/graphicDesignHoverBtn.png');        
+    }
+        
+    /* stroke */
+    nav.stroke ul li a,
+    nav.fill ul li a {
+      position: relative;
+    }
+    nav.stroke ul li a:after,
+    nav.fill ul li a:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: #aaa;
+      height: 1px;
+    }
+    nav.stroke ul li a:hover:after {
+      width: 100%;
+    }
+
+    nav.fill ul li a {
+      transition: all 2s;
+    }
+
+    nav.fill ul li a:after {
+      text-align: left;
+      content: '.';
+      margin: 0;
+      opacity: 0;
+    }
+    nav.fill ul li a:hover {
+      color: #fff;
+      z-index: 1;
+    }
+    nav.fill ul li a:hover:after {
+      z-index: -10;
+      animation: fill 1s forwards;
+      -webkit-animation: fill 1s forwards;
+      -moz-animation: fill 1s forwards;
+      opacity: 1;
+    }
+    </style>
+</head>
+    
+<body>
+    
+    <!-- Navbar-->
+    <ul>
+        <!--<li style="float: left;"><img src="image/myPortSmall.png"></li>-->
+        <li style="float: left;"><a href="homePage_Portfolio.html">my portfolio</a></li>
+        <li><a href="../landingPage_InclassAssignment05.html">back</a></li>
+        <li><a href="https://vsco.co/rubyyaa/images/1">vsco</a></li>
+        <li><a href="https://github.com/Rubyabutaleb1">github</a></li>
+        <li><a href="https://www.linkedin.com/in/ruby-abutaleb">linkedin</a></li>
+    </ul>
+    
+    <!--intro-->
+
+        <h1 style="color: #FBB03B;font-size:50px;font-family: 'playfair display', cursive; margin-bottom: 0px; margin-right: 15px;letter-spacing: 5px; text-align: center;">Ruby Abutaleb</h1>
+        <img src="image/photogHalfMe.jpg" style="border-radius: 50%;" class="center">
+
+        <br />
+        <h1 style="text-align: center; letter-spacing: 3px;">Aspiring Full Stack Developer</h1>
+        <p style="text-align:center; ">As a computer science major/graphic design minor at California State University, Fullerton, I have developed a strong technical background and design style. I have invested in my passion for creative development over the past years. While working on various programming and design projects, I have honed my understanding of back-end development and front-end aesthetic. Here are a few projects of mine:</p>
+        <hr>
+        
+        <!-- Pages Button-->
+        <br /><br />
+        <center><div id="Graphic"></div></center>
+        <br>
+        <button>
+            <a href="#"><h1> Software Dev</h1></a>
+        </button>
+        <br>
+        <button>
+            <a href="#"><h1> Work Experience</h1></a>
+        </button>
+    
+</body>
+</html>
